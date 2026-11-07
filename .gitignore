@@ -1,0 +1,14 @@
+# Allowlist: ignore everything, then include only source code.
+/*
+!/.gitignore
+!/README.md
+!/*.py
+!/setup.sh
+!/legal_rules.yaml
+!/lexicon.tsv
+!/tests/
+**/__pycache__/
+*.pyc
+*.wav
+*.m4a
+*.mp3

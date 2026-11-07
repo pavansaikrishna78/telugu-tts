@@ -1,0 +1,83 @@
+# Spoken form of legal references. Edit freely; textprep.py reads this on every run.
+#
+#   Section 2(77)   -> సెక్షన్ టూ, సెవెంటీ సెవెన్
+#   2(11)(a)(i)     -> టూ, ఎలెవన్, క్లాజ్ ఏ, సబ్ క్లాజ్ వన్
+#   Section 115BAC  -> సెక్షన్ వన్ హండ్రెడ్ ఫిఫ్టీన్ బి ఏ సి
+
+section_word: సెక్షన్
+separator: ", "
+
+labels:
+  clause: క్లాజ్          # (a)
+  sub_clause: సబ్ క్లాజ్   # (i), (iv)
+  item: ఐటెమ్             # (A)
+
+# How three-digit section numbers are read:
+#   hundred : 202 -> టూ హండ్రెడ్ టూ       194 -> వన్ హండ్రెడ్ నైంటీ ఫోర్
+#   pair    : 202 -> టూ ఓ టూ             194 -> వన్ నైంటీ ఫోర్
+three_digit_style: hundred
+
+# A single letter in the first lettered bracket is a clause letter, except these,
+# which are read as roman numerals. So 2(24)(i) is "సబ్ క్లాజ్ వన్".
+single_letters_read_as_roman: [i, v, x]
+
+english_numbers:
+  0: జీరో
+  1: వన్
+  2: టూ
+  3: త్రీ
+  4: ఫోర్
+  5: ఫైవ్
+  6: సిక్స్
+  7: సెవెన్
+  8: ఎయిట్
+  9: నైన్
+  10: టెన్
+  11: ఎలెవన్
+  12: ట్వెల్వ్
+  13: థర్టీన్
+  14: ఫోర్టీన్
+  15: ఫిఫ్టీన్
+  16: సిక్స్టీన్
+  17: సెవెంటీన్
+  18: ఎయిటీన్
+  19: నైన్టీన్
+  20: ట్వంటీ
+  30: థర్టీ
+  40: ఫార్టీ
+  50: ఫిఫ్టీ
+  60: సిక్స్టీ
+  70: సెవెంటీ
+  80: ఎయిటీ
+  90: నైంటీ
+hundred: హండ్రెడ్
+thousand: థౌజండ్
+zero_in_pair: ఓ
+
+letters:
+  a: ఏ
+  b: బి
+  c: సి
+  d: డి
+  e: ఇ
+  f: ఎఫ్
+  g: జి
+  h: హెచ్
+  i: ఐ
+  j: జె
+  k: కె
+  l: ఎల్
+  m: ఎం
+  n: ఎన్
+  o: ఓ
+  p: పి
+  q: క్యూ
+  r: ఆర్
+  s: ఎస్
+  t: టి
+  u: యు
+  v: వి
+  w: డబ్ల్యూ
+  x: ఎక్స్
+  y: వై
+  z: జెడ్
